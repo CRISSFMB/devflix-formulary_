@@ -1,0 +1,140 @@
+@import 'variables';
+@import 'mixins';
+html {
+    @include box-sizing (border-box);
+    *,
+    *:after,
+    *:before {
+        @include box-sizing(inherit);
+    }
+    font-size: 10px;
+}
+
+body {
+    background-color: $black;
+    height: 100vh;
+    @include tablet {
+        background-color: $gris;
+        background-image: url(../img/bg4.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.logo {
+    max-width: 20rem;
+    @include tablet {
+        max-width: 15rem;
+        margin-top: .5rem;
+        margin-left: 1%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+p {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+span {
+    color: $white;
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/*Formulary*/
+
+.formulary {
+    margin-top: 10rem;
+    @include tablet {
+        max-width: 42rem;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 5rem 5rem;
+        margin-top: -2rem;
+    }
+    legend {
+        color: $white;
+        font-size: 1.8rem;
+        font-family: $fuentePrincipal;
+        margin-bottom: 3rem;
+        font-weight: bold;
+    }
+    form {
+        .campo {
+            display: flex;
+            color: $gris2;
+            position: relative;
+            /*recordar cambien el color*/
+            label {
+                position: absolute;
+                top: 2rem;
+                left: 1rem;
+                font-size: 1.5rem;
+                transition: font-size .2s ease, top .2s ease;
+            }
+        }
+        .submit {
+            display: flex;
+            margin: 0;
+            input[type="submit"] {
+                @include button($primary);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    input {
+        flex: 1;
+        padding: 2rem .9rem;
+        margin-bottom: 3rem;
+        background-color: $gris3;
+        border-radius: $radius;
+        border: none;
+        font-size: 1.8rem;
+        color: $white;
+        &:focus {
+            outline: none;
+            +label {
+                font-size: 1.4rem;
+                top: .5rem;
+            }
+        }
+    }
+    .accions {
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem 0 9rem 0;
+        .remember {
+            input {
+                margin-right: 1rem;
+            }
+            label {
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+        }
+        .help {
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+        }
+    }
+}

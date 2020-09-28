@@ -1,0 +1,160 @@
+/* Media queries **/
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+html *,
+html *:after,
+html *:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #000000;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #323232;
+    background-image: url(../img/bg4.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.logo {
+  max-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    max-width: 15rem;
+    margin-top: .5rem;
+    margin-left: 1%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+span {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*Formulary*/
+.formulary {
+  margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+  .formulary {
+    max-width: 42rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 5rem 5rem;
+    margin-top: -2rem;
+  }
+}
+
+.formulary legend {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.formulary form .campo {
+  display: flex;
+  color: #8C8C8C;
+  position: relative;
+  /*recordar cambien el color*/
+}
+
+.formulary form .campo label {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  transition: font-size .2s ease, top .2s ease;
+}
+
+.formulary form .submit {
+  display: flex;
+  margin: 0;
+}
+
+.formulary form .submit input[type="submit"] {
+  background-color: #E50914;
+  display: block;
+  padding: 1rem 0;
+  color: #FFFFFF;
+  padding: 1.8rem 0;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.formulary form .submit input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.formulary input {
+  flex: 1;
+  padding: 2rem .9rem;
+  margin-bottom: 3rem;
+  background-color: #454545;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+.formulary input:focus {
+  outline: none;
+}
+
+.formulary input:focus + label {
+  font-size: 1.4rem;
+  top: .5rem;
+}
+
+.formulary .accions {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 9rem 0;
+}
+
+.formulary .accions .remember input {
+  margin-right: 1rem;
+}
+
+.formulary .accions .remember label {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.formulary .accions .help a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}

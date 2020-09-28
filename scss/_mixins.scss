@@ -1,0 +1,33 @@
+/* Media queries **/
+
+@mixin mobil {
+    @media (min-width: #{$mobil}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin button($bgcolor) {
+    background-color: $bgcolor;
+    display: block;
+    padding: 1rem 0;
+    color: $white;
+    padding: 1.8rem 0;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
