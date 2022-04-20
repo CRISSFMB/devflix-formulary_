@@ -1,0 +1,83 @@
+/*Formulary*/
+
+.formulary {
+  margin-top: 10rem;
+  @include tablet {
+    max-width: 42rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 5rem 5rem;
+    margin-top: -2rem;
+  }
+  legend {
+    color: $white;
+    font-size: 1.8rem;
+    font-family: $fuentePrincipal;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+  form {
+    .campo {
+      display: flex;
+      color: $gris2;
+      position: relative;
+      /*recordar cambien el color*/
+      label {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        font-size: 1.5rem;
+        transition: font-size 0.2s ease, top 0.2s ease;
+      }
+    }
+    .submit {
+      display: flex;
+      margin: 0;
+      input[type='submit'] {
+        @include button($primary);
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  input {
+    flex: 1;
+    padding: 2rem 0.9rem;
+    margin-bottom: 3rem;
+    background-color: $gris3;
+    border-radius: $radius;
+    border: none;
+    font-size: 1.8rem;
+    color: $white;
+    &:focus {
+      outline: none;
+      + label {
+        font-size: 1.4rem;
+        top: 0.5rem;
+      }
+    }
+  }
+  .accions {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 9rem 0;
+    .remember {
+      input {
+        margin-right: 1rem;
+      }
+      label {
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+    }
+    .help {
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+    }
+  }
+}

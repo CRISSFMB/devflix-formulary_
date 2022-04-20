@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DevFLix</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="site-header">
-        <img src="img/logo.svg" alt="logo" class="logo">
+      <img src="img/logo.svg" alt="logo" class="logo" />
     </header>
-
-    <!--formulario-->
+    <!--formulary start -->
     <main class="formulary container">
+      <form action="#">
+        <!-- form title -->
+        <legend>Unbegrenzt Filme, Serien und mehr .</legend>
+        <!-- imputs start -->
+        <div class="campo">
+          <input type="text " class="login" />
+          <label for="" class="login">Geben Sie Ihre E-Mail-Adresse ein</label>
+        </div>
 
-        <form action="#">
+        <div class="campo">
+          <input type="password " class="password" />
+          <label for="" class="login">Password</label>
+        </div>
 
-            <legend>Unbegrenzt Filme, Serien und mehr</legend>
+        <!-- imputs end -->
 
-            <div class="campo">
-                <input type="text " class="login">
-                <label for="" class="login">Geben Sie Ihre E-Mail-Adresse ein</label>
-            </div>
+        <!-- button submit  and checkbox start  -->
 
-            <div class="campo">
-                <input type="password " class="password">
-                <label for="" class="login">Password</label>
+        <div class="submit">
+          <input type="submit" value="LOSLEGEN" />
+        </div>
 
-            </div>
+        <div class="accions">
+          <div class="remember">
+            <input type="checkbox" />
+            <label for="">Remember me</label>
+          </div>
 
-            <div class="submit">
-                <input type="submit" value="LOSLEGEN">
-            </div>
+          <div class="help">
+            <a href="index.html">Brauchst du Hilfe?</a>
+          </div>
+        </div>
 
-            <div class="accions">
-
-                <div class="remember">
-                    <input type="checkbox">
-                    <label for="">Remember me</label>
-
-                </div>
-
-                <div class="help">
-                    <a href="index.html">Brauchst du Hilfe?</a>
-                </div>
-
-
-
-            </div>
-
-            <p>Login mit Social-Media-Account? <a href="index.html"><span>jetzt abonnieren</span></a> </p>
-
-
-
-
-
-
-
-
-        </form>
-
-
-
-
-
+        <p>
+          Login mit Social-Media-Account?
+          <a href="index.html"><span>jetzt abonnieren</span></a>
+        </p>
+        <!-- button submit  and checkbox  end -->
+      </form>
+      <!--formulary end -->
     </main>
-
-
-</body>
-
+  </body>
 </html>

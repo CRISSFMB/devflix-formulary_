@@ -1,0 +1,37 @@
+html {
+  @include box-sizing(border-box);
+  *,
+  *:after,
+  *:before {
+    @include box-sizing(inherit);
+  }
+  font-size: 10px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+p {
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+span {
+  color: $white;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,17 @@
+body {
+  background-color: $black;
+  height: 100vh;
+  min-width: 320px;
+  @include tablet {
+    background-color: $gris;
+    background-image: linear-gradient(
+        to right top,
+        rgba(14, 18, 18, 0.515),
+        rgba(11, 15, 16, 0.522)
+      ),
+      url(../img/bg4.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
