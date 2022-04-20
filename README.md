@@ -1,7 +1,11 @@
 # Project devflix ![](https://img.shields.io/badge/-html5-orange) ![](https://img.shields.io/badge/-css-blue)
 
-# formulary like NETFLIX
+# 🔥 Preview Project
 
-## 🚀 start project : open with live server
+ 🚀[Preview Project](https://crisger.github.io/devflix-formulary/)
 
-#### 🤍 This project is done for study and practice reasons.
+# 🔥 open Server
+
+ open with live server
+
+## 🗨️ a login similar to netflix
